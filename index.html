@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>M.Phani Sasank</title>
+</head>
+
+<body>
+  <section id="home" class="home">
+    <div class="header">
+      <h1>
+        <span class="site-title">Hi, I am Sasank</span>
+        <p class="site-description anim-typewriter">Frontend Developer</p>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="Send email" href="mailto:mail@sasank.me">
+          <i class="icon fas fa-at"></i>
+        </a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/mpsasank">
+          <i class="icon fab fa-github" aria-hidden="true"></i>
+        </a>
+        <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/mphanisasank/">
+          <i class="icon fab fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <!-- <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/mphanisasank">
+          <i class="icon fab fa-facebook-f" aria-hidden="true"></i>
+        </a> -->
+        <a aria-label="My Resume" target="_blank" href="resume.pdf" download="cv">
+          <i class="icon fas fa-file-pdf"></i>
+        </a>
+      </div>
+      <!-- <div class="header-links">
+        <a class="link" href="#about" data-scroll="">About Me</a>
+        <a class="link" href="#projects" data-scroll="">Projects</a>
+      </div> -->
+    </div>
+    <!-- <a class="down" href="#about" data-scroll="">
+      <i class="icon fas fa-chevron-down" aria-hidden="true"></i>
+    </a> -->
+    <div id="tagsContainer">
+      <canvas width="500" height="500" id="tagcanvas">
+        <ul>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML 5</a>
+          </li>
+          <li>
+            <a data-weight="25" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS 3</a>
+          </li>
+          <li>
+            <a data-weight="25" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+          </li>
+          <li>
+            <a data-weight="24" href="https://en.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a>
+          </li>
+          <li>
+            <a data-weight="21" href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">AJAX</a>
+          </li>
+          <li>
+            <a data-weight="14" href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a>
+          </li>
+          <li>
+            <a data-weight="14" href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015" target="_blank">ECMAScript 2015</a>
+          </li>
+          <li>
+            <a data-weight="13" href="https://en.wikipedia.org/wiki/XML" target="_blank">XML</a>
+          </li>
+          <li>
+            <a data-weight="27" href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank">React</a>
+          </li>
+          <li>
+            <a data-weight="22" href="https://en.wikipedia.org/wiki/Git" target="_blank">Git</a>
+          </li>
+          <li>
+            <a data-weight="22" href="https://en.wikipedia.org/wiki/Apache_Subversion" target="_blank">SVN</a>
+          </li>
+          <li>
+            <a data-weight="22" href="https://en.wikipedia.org/wiki/Team_Foundation_Server" target="_blank">TFS</a>
+          </li>
+          <li>
+            <a data-weight="20" href="https://vuejs.org/" target="_blank">Vue.js</a>
+          </li>
+          <li>
+            <a data-weight="23" href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a>
+          </li>
+          <li>
+            <a data-weight="23" href="https://en.wikipedia.org/wiki/Foundation_(framework)" target="_blank">Zurb Foundation</a>
+          </li>
+          <li>
+            <a data-weight="23" href="http://oddbird.net/susy/" target="_blank">Susy</a>
+          </li>
+          <li>
+            <a data-weight="23" href="https://bulma.io/" target="_blank">Bulma</a>
+          </li>
+          <li>
+            <a data-weight="23" href="https://purecss.io/" target="_blank">Pure.CSS</a>
+          </li>
+          <li>
+            <a data-weight="23" href="https://semantic-ui.com" target="_blank">Semantic UI</a>
+          </li>
+          <li>
+            <a data-weight="23" href="http://materializecss.com" target="_blank">Materialize </a>
+          </li>
+          <li>
+            <a data-weight="15" href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank">SCSS</a>
+          </li>
+          <li>
+            <a data-weight="15" href="https://en.wikipedia.org/wiki/Less_(stylesheet_language)" target="_blank">LESS</a>
+          </li>
+          <li>
+            <a data-weight="20" href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">RWD</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/Progressive_Web_Apps" target="_blank">PWA</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages" target="_blank">AMP</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://www.npmjs.com/" target="_blank">npm</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/Webpack" target="_blank">Webpack</a>
+          </li>
+          <li>
+            <a data-weight="19" href="http://gulpjs.com/" target="_blank">Gulp</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/BEM" target="_blank">BEM</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://smacss.com/" target="_blank">SMACSS</a>
+          </li>
+          <li>
+            <a data-weight="19" href="http://oocss.org" target="_blank">OOCSS</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/WordPress" target="_blank">Wordpress</a>
+          </li>
+          <li>
+            <a data-weight="13" href="https://en.wikipedia.org/wiki/Drupal" target="_blank">Drupal</a>
+          </li>
+          <li>
+            <a data-weight="14" href="https://en.wikipedia.org/wiki/Joomla" target="_blank">Joomla</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/Magento" target="_blank">Magento</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank">SVG</a>
+          </li>
+          <li>
+            <a data-weight="19" href="https://en.wikipedia.org/wiki/Canvas_element" target="_blank">Canvas</a>
+          </li>
+          <li>
+            <a data-weight="18" href="https://en.wikipedia.org/wiki/Notepad%2B%2B" target="_blank">Notepad++</a>
+          </li>
+          <li>
+            <a data-weight="18" href="https://en.wikipedia.org/wiki/Sublime_Text" target="_blank">Sublime Text</a>
+          </li>
+          <li>
+            <a data-weight="18" href="https://en.wikipedia.org/wiki/Brackets_(text_editor)" target="_blank">Brackets</a>
+          </li>
+          <li>
+            <a data-weight="18" href="https://en.wikipedia.org/wiki/Visual_Studio_Code" target="_blank">VSCode</a>
+          </li>
+          <li>
+            <a data-weight="26" href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">Photoshop</a>
+          </li>
+          <li>
+            <a data-weight="26" href="https://en.wikipedia.org/wiki/Adobe_Dreamweaver" target="_blank">Dreamweaver</a>
+          </li>
+          <li>
+            <a data-weight="26" href="https://en.wikipedia.org/wiki/Adobe_Lightroom" target="_blank">Lightloom</a>
+          </li>
+        </ul>
+      </canvas>
+    </div>
+  </section>
+  <section class="timeline">
+
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="js/tagcanvas.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
