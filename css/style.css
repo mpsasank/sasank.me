@@ -49,6 +49,10 @@ sup {
   overflow: hidden;
 }
 
+#tagsContainer {
+  margin: 0 auto
+}
+
 .header {
   z-index: 2;
   text-align: center;
@@ -458,7 +462,6 @@ section p.leader {
   align-items: center;
 }
 .timeline-heading .logo {
-  display: inline;
   float: left;
   margin: 15px;
   padding: 10px;
@@ -635,6 +638,7 @@ section p.leader {
   width: 100%;
   height: auto;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .block .content {
@@ -677,5 +681,7 @@ section p.leader {
   text-align: center;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+  mask-image: -webkit-radial-gradient(#fff, #000);
 }

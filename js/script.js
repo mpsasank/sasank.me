@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('#tagcanvas').attr('width', window.innerWidth-20);
-	$('#tagcanvas').attr('height', window.innerHeight-20);
+	$('#tagcanvas').attr('width', window.innerWidth);
+	$('#tagcanvas').attr('height', window.innerHeight);
 	if( ! $('#tagcanvas').tagcanvas({
 		textColour : '#ffffff',
 		maxSpeed : 0.05,
@@ -11,7 +11,7 @@ $(document).ready(function() {
 		zoom:1.6,
 		noSelect:true,
 		textFont:null,
-		pinchZoom:true,
+		pinchZoom:false,
 		freezeDecel:true,
 		fadeIn:3000,
 		initial: [0.3,-0.1],
