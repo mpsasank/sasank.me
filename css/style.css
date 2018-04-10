@@ -3,6 +3,7 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
 }
 
 * {
@@ -10,12 +11,10 @@ html {
 }
 
 body {
-  padding: 0;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #555;
-  font-family: "Montserrat", sans-serif;
   background-color: #f7f7f7;
+  font: 1.6rem/1.65 "Montserrat", sans-serif;
+  color: #555;
+  padding: 0;
 }
 
 article,
@@ -27,34 +26,6 @@ header,
 nav,
 section {
   display: block;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-ol,
-ul {
-  padding-left: 40px;
-}
-
-figure,
-ol,
-p,
-ul {
-  margin: 1em 0;
 }
 
 a img {
@@ -75,6 +46,7 @@ sup {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .header {
@@ -94,7 +66,7 @@ sup {
 }
 
 .header .site-title {
-  font-size: 50px;
+  font-size: 5rem;
   display: block;
   line-height: 1;
   color: #fff;
@@ -103,12 +75,12 @@ sup {
 @media only screen and (min-width: 550px) {
   .header .site-title {
     margin: 0;
-    font-size: 100px;
+    font-size: 10rem;
   }
 }
 
 .header .site-description {
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #fff;
   width: 10.5em;
   margin: 0.8em auto 0;
@@ -121,7 +93,7 @@ sup {
 
 @media only screen and (min-width: 550px) {
   .header .site-description {
-    font-size: 40px;
+    font-size: 4rem;
   }
 }
 
@@ -153,13 +125,13 @@ sup {
 .header-links .link {
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin: 10px;
 }
 
 @media only screen and (min-width: 550px) {
   .header-links .link {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
@@ -182,7 +154,7 @@ sup {
   border-radius: 50%;
   border: 2px solid #fff;
   transition: all 0.7s;
-  font-size: 20px;
+  font-size: 2rem;
   margin: 5px;
 }
 
@@ -196,7 +168,7 @@ sup {
   .header-icons .icon {
     width: 58px;
     height: 58px;
-    font-size: 35px;
+    font-size: 3.5rem;
   }
 }
 
@@ -268,20 +240,25 @@ sup {
   }
 }
 
-#about {
+#about,
+#projects {
   width: 90%;
-  margin: 20px auto;
-  padding: 20px 0;
+  margin: 30px auto;
   max-width: 1200px;
 }
 
-#about h1 {
+section h1 {
   text-align: center;
   font-size: 3rem;
   font-weight: 200;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
-#about p.leader {
+@media (min-width: 480px) {
+  section h1 {
+    font-size: 4.8rem;
+  }
+}
+section p.leader {
   text-align: center;
   max-width: 90%;
   margin: auto;
@@ -291,12 +268,13 @@ sup {
 .skills_list {
   display: grid;
   grid-gap: 10px 4px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
   margin: 20px 0 50px;
 }
 
 .footer {
   background: #1a222c;
+  border-top: 4px solid #4b5664;
   padding: 10px 0;
   text-align: center;
   color: #fff;
@@ -330,7 +308,7 @@ sup {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-size: 12px;
+  font-size: 1.2rem;
   text-decoration: none;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   font-weight: bold;
@@ -367,12 +345,12 @@ sup {
 .timeline {
   position: relative;
   list-style: none;
-  margin: 40px 0 0;
+  margin: 20px 0 0;
   padding: 0;
 }
 .timeline:before {
-  top: -30px;
-  bottom: -80px;
+  top: -10px;
+  bottom: 0;
   position: absolute;
   content: " ";
   width: 2px;
@@ -381,7 +359,7 @@ sup {
   margin-left: -1px;
 }
 .timeline > li {
-  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
   width: 50%;
   float: left;
@@ -498,28 +476,28 @@ sup {
 }
 .timeline-heading h2 {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: inherit;
   letter-spacing: 2px;
   margin: 0;
   padding: 0 0 6px;
-  line-height: 1rem;
+  line-height: 2rem;
   color: #fff;
 }
 @media (min-width: 480px) {
   .timeline-heading h2 {
-    font-size: 165%;
-    line-height: 1.2rem;
+    font-size: 2.6rem;
   }
 }
 .timeline-heading h2 span {
   display: block;
-  font-size: 0.6rem;
-  margin: 0 0 4px 2px;
+  font-size: 1rem;
+  margin: 0 0 0 0.2rem;
 }
 @media (min-width: 480px) {
   .timeline-heading h2 span {
-    font-size: 0.8rem;
+    font-size: 1.28rem;
+    margin: 0 0 0.6rem 0.2rem;
   }
 }
 .timeline-heading h4 {
@@ -540,10 +518,12 @@ sup {
   padding: 5px 15px 10px 27px;
 }
 .timeline-footer {
-  padding: 5px 15px;
-  background-color: #f4f4f4;
-  text-align: right;
   font-size: 0.8em;
+  text-align: right;
+  border-top: solid 1px #e4e4eb;
+  opacity: 0.8;
+  margin: 0 1rem;
+  padding: 0.5rem;
 }
 .timeline-footer > a {
   cursor: pointer;
@@ -607,4 +587,95 @@ sup {
   .timeline > li.timeline-inverted > .timeline-badge {
     left: -12px;
   }
+}
+
+.projects_wrap {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  grid-column-gap: 4rem;
+  grid-auto-rows: 1fr;
+  width: 100%;
+  margin: 0 auto 9.6rem;
+}
+@media (min-width: 480px) {
+  .projects_wrap {
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  }
+}
+
+.block {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
+  color: #1b1b1b;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  will-change: transform, box-shadow;
+  text-decoration: none;
+}
+.block:hover,
+.block:focus {
+  color: #1b1b1b;
+}
+.block:hover {
+  -webkit-box-shadow: 0 16px 32px 0 rgba(10, 16, 34, 0.2), 0 0 0 transparent;
+  box-shadow: 0 16px 32px 0 rgba(10, 16, 34, 0.2), 0 0 0 transparent;
+  -webkit-transform: translateY(-5px) translateZ(0);
+  transform: translateY(-5px) translateZ(0);
+}
+
+.block img {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+}
+
+.block .content {
+  padding: 2.4rem 2.8rem 3.2rem;
+}
+
+.block p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.65;
+  opacity: 0.85;
+}
+
+.block h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.block h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: ibm plex mono, monospace;
+  text-transform: uppercase;
+  margin: 0 0 0.6rem;
+  opacity: 0.72;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.img-wrap {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  border-bottom: solid 1px #f1f1f1;
+  line-height: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
 }
