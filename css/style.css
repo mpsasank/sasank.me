@@ -408,11 +408,11 @@ footer .icons_wrap .icon {
 .timeline {
   position: relative;
   list-style: none;
-  margin: 20px 0 0;
+  margin: 60px 0 0;
   padding: 0;
 }
 .timeline:before {
-  top: -10px;
+  top: -40px;
   bottom: 0;
   position: absolute;
   content: " ";
@@ -596,7 +596,7 @@ footer .icons_wrap .icon {
   clear: right;
 }
 .timeline > li:nth-child(2) {
-  margin-top: 60px;
+  margin-top: -20px;
 }
 .timeline > li.timeline-inverted > .timeline-badge {
   left: -12px;
@@ -608,6 +608,9 @@ footer .icons_wrap .icon {
   display: none;
 }
 @media (max-width: 767px) {
+  .timeline {
+    margin: 20px 0 50px
+  }
   .timeline:before, .timeline > li > .timeline-panel:before, .timeline > li > .timeline-panel:after {
     display: none
   }
