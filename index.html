@@ -19,21 +19,21 @@
         <span class="site-title">I'm Sasank</span>
         <p class="site-description anim-typewriter">Frontend Developer</p>
       </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="mailto:mail@sasank.me">
-          <i class="icon fas fa-at"></i>
+      <div class="icons_wrap">
+        <a class="icon" aria-label="Send email" data-tooltip="eMail" href="mailto:mail@sasank.me" rel="nofollow">
+          <i class="fas fa-at"></i>
         </a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/mpsasank">
-          <i class="icon fab fa-github" aria-hidden="true"></i>
+        <a class="icon"  aria-label="My Github" data-tooltip="Github" target="_blank" href="https://github.com/mpsasank">
+          <i class="fab fa-github" aria-hidden="true"></i>
         </a>
-        <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/mphanisasank/">
-          <i class="icon fab fa-linkedin-in" aria-hidden="true"></i>
+        <a class="icon" aria-label="My Linkedin" data-tooltip="Linkedin" target="_blank" href="https://www.linkedin.com/in/mphanisasank/">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
         </a>
         <!-- <a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/mphanisasank">
           <i class="icon fab fa-facebook-f" aria-hidden="true"></i>
         </a> -->
-        <a aria-label="My Resume" target="_blank" href="resume.pdf" download="Sasank-CV" rel="nofollow">
-          <i class="icon fas fa-file-pdf"></i>
+        <a class="icon" aria-label="My Resume" data-tooltip="Resume" target="_blank" href="resume.pdf" download="Sasank-CV" rel="nofollow">
+          <i class="fas fa-file-pdf"></i>
         </a>
       </div>
       <div class="header-links">
@@ -227,7 +227,8 @@
     <h1>Work Experience</h1>
     <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
 
-    <ul class="timeline">
+    <ul class="timeline" data-mobile="">
+      <input type="checkbox" id="checkbox" class="none">
       <li>
         <div class="timeline-badge">
           <a>
@@ -344,6 +345,8 @@
           <div class="timeline-footer">Jan 2014 – March 2015</div>
         </div>
       </li>
+
+      <li class="timeline_toggle view_all none"><label for="checkbox">View More</label></li>
 
       <li class="timeline-inverted">
         <div class="timeline-badge">
@@ -523,6 +526,7 @@
           <div class="timeline-footer">2003-2005</div>
         </div>
       </li>
+
       <li>
         <div class="timeline-badge">
           <a>
@@ -550,6 +554,7 @@
         </div>
       </li>
       <li class="clearfix no-float"></li>
+      <li class="timeline_toggle view_less none"><label for="checkbox">View Less</label></li>    
     </ul>
 
   </section>
@@ -580,8 +585,28 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <p>© M.Phani Sasank</p>
+  <footer>
+    <div class="icons_wrap">
+      <a class="icon" aria-label="Send email" data-tooltip="eMail" href="mailto:mail@sasank.me" rel="nofollow">
+        <i class="fas fa-at"></i>
+      </a>
+      <a class="icon"  aria-label="My Github" data-tooltip="Github" target="_blank" href="https://github.com/mpsasank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="icon" aria-label="My Linkedin" data-tooltip="Linkedin" target="_blank" href="https://www.linkedin.com/in/mphanisasank/">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+      <!-- <a class="icon" aria-label="My Facebook" data-tooltip="Facebook" target="_blank" href="https://www.facebook.com/mphanisasank">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+      </a> -->
+      <a class="icon" aria-label="My Resume" data-tooltip="Resume" target="_blank" href="resume.pdf" download="Sasank-CV" rel="nofollow">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon" aria-label="My Mobile number" data-tooltip="Mobile: 9560804277" href="tel:+919560804277" rel="nofollow">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+    <p>© 2018 - M.Phani Sasank</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
