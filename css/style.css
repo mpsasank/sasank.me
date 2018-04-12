@@ -181,15 +181,15 @@ sup {
   height: 105%;
   border-radius: 50%;
   background: #fff;
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
   opacity: 0;
 }
-.icons_wrap .icon:hover:before {  
+.icons_wrap .icon:hover:before {
   -webkit-animation: ripple 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation: ripple 500ms cubic-bezier(0.4, 0, 0.2, 1)
+  animation: ripple 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 550px) {
@@ -202,29 +202,29 @@ sup {
 
 @-webkit-keyframes ripple {
   from {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1)
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 
   to {
-      opacity: 0;
-      -webkit-transform: scale(1.8);
-      transform: scale(1.8)
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
   }
 }
 
 @keyframes ripple {
   from {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1)
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 
   to {
-      opacity: 0;
-      -webkit-transform: scale(1.8);
-      transform: scale(1.8)
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
   }
 }
 
@@ -351,7 +351,6 @@ footer .icons_wrap .icon {
   height: 4.5rem;
   font-size: 2.5rem;
 }
-
 
 /* -----------------------------------------------
  * Tags
@@ -609,10 +608,12 @@ footer .icons_wrap .icon {
 }
 @media (max-width: 767px) {
   .timeline {
-    margin: 20px 0 50px
+    margin: 20px 0 50px;
   }
-  .timeline:before, .timeline > li > .timeline-panel:before, .timeline > li > .timeline-panel:after {
-    display: none
+  .timeline:before,
+  .timeline > li > .timeline-panel:before,
+  .timeline > li > .timeline-panel:after {
+    display: none;
   }
   .timeline > li {
     margin: 0 0 10px;
@@ -622,15 +623,16 @@ footer .icons_wrap .icon {
     clear: both;
   }
   .timeline > li > .timeline-panel {
-    width: 100%
+    width: 100%;
   }
   .timeline > li > .timeline-badge {
-   display: none;
+    display: none;
   }
-  .timeline > li > .timeline-panel, .timeline > li.timeline-inverted {
+  .timeline > li > .timeline-panel,
+  .timeline > li.timeline-inverted {
     float: none;
   }
-  .timeline > li:nth-child(n+6) {
+  .timeline > li:nth-child(n + 6) {
     display: none;
   }
   .timeline > li:nth-child(2) {
@@ -647,15 +649,16 @@ footer .icons_wrap .icon {
   .timeline_toggle label {
     display: block;
   }
-  input[type=checkbox]:checked ~ li, input[type=checkbox]:checked .view_less {
-    display: inherit
+  input[type="checkbox"]:checked ~ li,
+  input[type="checkbox"]:checked .view_less {
+    display: inherit;
   }
-  input[type=checkbox]:checked ~ .view_all label {
+  input[type="checkbox"]:checked ~ .view_all label {
     text-indent: -99999px;
     line-height: 0;
   }
-  input[type=checkbox]:checked ~ .view_all label:after {
-    content: 'View Less'; 
+  input[type="checkbox"]:checked ~ .view_all label:after {
+    content: "View Less";
     display: block;
     font-size: 1.6rem;
     line-height: 2.65rem;
@@ -748,6 +751,7 @@ footer .icons_wrap .icon {
 .block .img-wrap {
   border-radius: 6px 6px 0 0;
   width: 100%;
+  position: relative;
   overflow: hidden;
   display: block;
   border-bottom: solid 1px #f1f1f1;
@@ -759,12 +763,80 @@ footer .icons_wrap .icon {
   -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
   mask-image: -webkit-radial-gradient(#fff, #000);
 }
+.block .img-wrap::before {
+  position: absolute;
+  top: 0;
+  right: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.55);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.35) 22%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0.55)),
+    color-stop(22%, rgba(255, 255, 255, 0.35)),
+    color-stop(62%, rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.35) 22%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.35) 22%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.35) 22%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.35) 22%,
+    rgba(255, 255, 255, 0) 62%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ffffff',GradientType=1);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.block:hover .img-wrap::before,
+.bzPanel:hover .hover-shine::before,
+.bz-prBlock:hover .hover-shine::before,
+.offer-block:hover .hover-shine::before {
+  -webkit-animation: shine 1s;
+  animation: shine 1s;
+}
+@-webkit-keyframes shine {
+  100% {
+    right: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    right: 125%;
+  }
+}
 
 /* -----------------------------------------------
  * Tooltip
  * --------------------------------------------- */
 
- [data-tooltip] {
+[data-tooltip] {
   cursor: pointer;
   position: relative;
 }
@@ -790,7 +862,7 @@ footer .icons_wrap .icon {
   margin-bottom: 5px;
   transform: translateX(-50%);
 }
- [data-tooltip]:hover:after {
+[data-tooltip]:hover:after {
   transition: all 0.15s cubic-bezier(0.5, 1, 0.25, 1);
   visibility: visible;
   opacity: 1;
