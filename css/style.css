@@ -689,7 +689,6 @@ footer .icons_wrap .icon {
   background: #fff;
   box-shadow: 0 1px 1px 1px rgba(10, 16, 34, 0.08);
   color: #1b1b1b;
-  cursor: pointer;
   position: relative;
   -webkit-transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
   transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
@@ -719,7 +718,7 @@ footer .icons_wrap .icon {
 }
 
 .block .content {
-  padding: 2.4rem 2.8rem 3.2rem;
+  padding: 0 2.8rem 3.2rem;
 }
 
 .block p {
@@ -814,10 +813,7 @@ footer .icons_wrap .icon {
   -webkit-transform: skewX(-25deg);
   transform: skewX(-25deg);
 }
-.block:hover .img-wrap::before,
-.bzPanel:hover .hover-shine::before,
-.bz-prBlock:hover .hover-shine::before,
-.offer-block:hover .hover-shine::before {
+.block:hover .img-wrap::before {
   -webkit-animation: shine 1s;
   animation: shine 1s;
 }
@@ -830,6 +826,32 @@ footer .icons_wrap .icon {
   100% {
     right: 125%;
   }
+}
+
+.block .btn_wrap {
+  border-bottom: 1px solid #e4e4eb;
+  width: 100%;
+  display: flex;
+}
+.block .btn_wrap a {
+  width: 50%;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 5px;
+  transition: all 0.2s;
+}
+.block .btn_wrap a:hover {
+  transform: translateY(-3px)
+}
+.block .btn_wrap i {
+  margin-right: 2px;
+}
+.block .btn_wrap .demo {
+  border-right: 1px solid #e4e4eb;
+}
+.block .btn_wrap .demo i {
+  font-size: 1.2rem;
 }
 
 /* -----------------------------------------------
