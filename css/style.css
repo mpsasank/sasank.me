@@ -657,6 +657,12 @@ footer .icons_wrap .icon {
     line-height: 2.65rem;
     text-indent: 0;
   }
+  .timeline-body .tags {
+    display: none;
+  }
+  .timeline-footer {
+    margin-top: 1rem;
+  }
 }
 
 /* -----------------------------------------------
@@ -898,9 +904,13 @@ footer .icons_wrap .icon {
   margin: 20px 0 50px;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   .skills_list {
     font-size: 40%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .skills_list {
     grid-template-columns: 1fr 1fr; 
   }
 }
