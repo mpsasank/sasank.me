@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #f7f7f7;
-  font: 1.6rem/1.65 "Montserrat", sans-serif;
+  font: 1.8rem/1.65 "Montserrat", sans-serif;
   color: #555;
   padding: 0;
 }
@@ -402,6 +402,7 @@ footer .icons_wrap .icon {
   list-style: none;
   margin: 60px 0 0;
   padding: 0;
+  font-size: 1.6rem;
 }
 .timeline:before {
   top: -40px;
@@ -722,7 +723,7 @@ footer .icons_wrap .icon {
 
 .block p {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.65;
   opacity: 0.85;
 }
@@ -945,8 +946,8 @@ footer .icons_wrap .icon {
 }
 .skill .progress span {
   width: 100%;
-  font-size: 2.8em;
-  line-height: 7.15em;
+  font-size: 2.4em;
+  line-height: 8.4em;
   font-weight: bold;
   position: absolute;
   top: 0;
